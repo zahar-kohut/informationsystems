@@ -47,6 +47,8 @@ h1 {
 
 .tableclients__item_4 {
 	font-size: 14px;
+	visibility:hidden;
+	grid-template-columns: repeat(11, 163px);
 }
 
 .tableclients__item_5 {
@@ -96,6 +98,8 @@ h1 {
 
 .tableemploee__item_3 {
 	font-size: 13px;
+	visibility:hidden;
+	grid-template-columns: repeat(11, 163px);
 }
 
 .tableemploee__item_5 {
