@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap&subset=cyrillic-ext);
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	font-size: 100%;
+	line-height: 1;
+	background-color: #333;
+	color: white;
+	font-family:'Poppins';
+	font-size: 15.5px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+a {
+	color: #fff;
+}
+/*--------------------*/
+.wrapper {
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.header {
+	padding: 15px;
+	background-color: #794f45;
+	display: grid;
+	grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+	align-items: center;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.header__menu {
+}
+
+.header__logo {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #fff;
+	grid-column: 2 / 3;
+}
+
+
+.header__list {
+	display: grid;
+	grid-auto-flow: column;
+	grid-column: 3 / 4;
+}
+
+.header__list li {
+
+}
+
+.header_link {
+	transition: 0.3s ease;
+}
+
+.header_link:hover {
+	color: #7a956b;
+}
+
+main {
+	padding: 50px 15px;
+}
+
+.data {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.data__container {
+	margin: 0 auto;
+	max-width: 1240px;
+}
+
+.data__title {
+	font-weight: 700;
+	color: #fff;
+	font-size: 32px;
+	line-height: 40px;
+	margin: 0px 0px 30px 0px;
+}
+
+.data__items {
+	display: grid;
+	grid-template: auto auto / 1fr;
+}
+.data__buttons {
+	display: flex;
+	position: relative;
+	z-index: 2;	
+}
+.data__button {
+	flex: 0 1 50%;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 700;
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	border-bottom: none;
+	text-transform: uppercase;
+}
+
+.data__button_main {
+}
+
+.data__button_trans {
+}
+
+.data__body {
+	grid-column: 1 / span 2;
+}
+.data__block {
+	display: none;
+	position: relative;
+}
+
+.data__block:before {
+	content: "";
+	height: 75px;
+	width: 50%;
+	position: absolute;
+	top: -75px;
+	z-index: 0;
+}
+
+.data__block:after {
+	content: "";
+	height: 75px;
+	width: 50%;
+	position: absolute;
+	top: -75px;
+	right: 0;
+	z-index: 0;
+}
+
+.data__block:target {
+	display: block;
+}
+
+.data__block_main {
+}
+
+.data__block_main:before {
+	background-color: #794f45;
+}
+
+.data__block_main:after {
+	background-color: rgba(121, 79, 69, 0.3);
+}
+
+.data__block_trans {
+}
+
+.data__block_trans:before {
+	background-color: rgba(121, 79, 69, 0.3);
+}
+
+.data__block_trans:after {
+	background-color: #794f45;
+}
+
+.tabletrans {
+}
+
+.tabletrans__grid {
+	display: grid;
+}
+
+.tabletrans__item {
+		display: grid;
+		grid-template-columns: repeat(11, 1fr);
+		border: 2px solid rgba(255, 255, 255, 0.8);
+		border-right: none;
+		border-bottom: none;
+}
+
+.tabletrans__item_3 {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.8)
+}
+
+.atrbtrans__item {
+	border-right: 2px solid rgba(255, 255, 255, 0.8);
+	padding: 27.5px 10px;
+	transition: 0.2s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.atrbtrans__item:hover {
+	background-color: #7a956b;
+}
+
+.atrbtrans__item_atrb {
+	background-color: #77608d;
+}
+
+.tablemain {
+}
+
+.tablemain__grid {
+	display: grid;
+}
+
+.tablemain__item {
+	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	border-right: none;
+	border-bottom: none;
+}
+
+.tablemain__item_6 {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.8)
+}
+
+.atrbmain__item {
+	border-right: 2px solid rgba(255, 255, 255, 0.8);
+	padding: 27.5px 10px;
+	transition: 0.2s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.atrbmain__item:hover {
+	background-color: #7a956b;
+}
+
+.atrbmain__item_atrb {
+	background-color: #77608d;
+}
+
